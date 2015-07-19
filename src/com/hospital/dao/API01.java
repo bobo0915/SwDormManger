@@ -37,7 +37,7 @@ public class API01 {
 			}
 		}  finally {
 			if (in != null) {
-				in.close();GGGGGGGG
+				in.close();
 			}
 		}
 		byte b[]=out.toByteArray( );
