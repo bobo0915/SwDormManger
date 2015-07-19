@@ -11,7 +11,7 @@ import com.util.HibernateFilter;
  */
 public class MedicineDao extends SupperDao {
 	/**
-	 * 查询药品信息
+	 * 查询药品信息顶顶顶顶
 	 * 
 	 * @param id
 	 * @return Medicine
