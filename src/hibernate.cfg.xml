@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Hibernate方言 -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- 数据库连接 -->
+		<property name="connection.url">jdbc:mysql://182.254.240.172:3306/medicine?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<!-- 用户名 -->
+		<property name="connection.username">root</property>
+		<!-- 密码 -->
+		<property name="connection.password"></property>
+		<!-- 驱动 -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- 自动建表 -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- 显示SQL语句 -->
+		<property name="show_sql">true</property>
+		
+		<!--c3p0  -->
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.timeout">120</property>
+		<property name="hibernate.c3p0.max_statements">100</property>
+		<property name="hibernate.c3p0.acquire_increment">2</property>
+		<property name="hibernate.c3p0.validate">true</property>
+		
+		<!-- 映射文件  -->
+		<mapping resource="com/hospital/persistence/Medicine.hbm.xml" />
+		<mapping resource="com/hospital/persistence/Category.hbm.xml" />
+		<mapping resource="com/hospital/persistence/SellDetail.hbm.xml" />
+		<mapping resource="com/hospital/persistence/User.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
