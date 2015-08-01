@@ -16,7 +16,11 @@ import java.util.List;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
-
+/**
+ * API 测试类
+ * @author CZYB
+ *
+ */
 public class API01 {
 
 	public static void main(String[] args) throws IOException {
